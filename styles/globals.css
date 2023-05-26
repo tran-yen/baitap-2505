@@ -1,13 +1,18 @@
 @font-face {
-  font-family: Roboto;
-  src: url(font/Roboto-Thin.ttf);
+  font-family: Outfit;
+  src: url(font/Outfit-Regular.ttf);
+}
+
+@font-face {
+  font-family: OutfitBold;
+  src: url(font/Outfit-ExtraBold.ttf);
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Roboto !important;
+  font-family: Outfit !important;
   font-size: 10px;
   font-weight: 400;
   line-height: 1.2;
@@ -27,6 +32,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 !important;
 }
 
+.c-layout {
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: transparent !important;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -39,11 +52,4 @@ h1, h2, h3, h4, h5, h6 {
 
 @import url(components/common.css);
 @import url(components/sign-in.css);
-
-.ant-layout-header {
-  height: 30rem !important;
-  background-image: url('/images/header_image/godfather_header.jpg') !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: top !important;
-}
+@import url(components/sign-up.css);

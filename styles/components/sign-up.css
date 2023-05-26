@@ -1,0 +1,25 @@
+.signup-block__head {
+    margin-top: 50px;
+}
+
+.thanks-block {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0.2);
+}
+
+.thanks-block p:not(.bold-title) {
+    color: rgb(177, 171, 203);;
+}
+
+.thanks-block .bold-title {
+    margin-top: 30px;
+}

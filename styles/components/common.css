@@ -5,6 +5,12 @@
 }
 
 .authen-block {
+    --priColor: #3f66ff;
+    --labelColor: #201665;
+
+    position: relative;
+    width: 80%;
+    height: 100%;
     padding: 20px 50px;
 }
 
@@ -17,16 +23,98 @@
 .ant-row {
     width: 100%;
     /* background-color: rgb(50, 90, 255); */
-    border-radius: 30px;
     overflow: hidden;
 }
 
-.ant-row.complete .ant-col:first-child {
+.c-row {
+    border-radius: 30px;
+}
+
+.ant-row .ant-col {
+    background-color: white;
+}
+.ant-row.complete .ant-col-left {
     animation: exitLeft 1s forwards;
 }
 
-.ant-row.complete .ant-col:last-child {
+.ant-row.complete .ant-col-right {
     animation: exitRight 1s forwards;
+}
+
+.ant-row.complete .thanks-block {
+    display: flex;
+    animation: showThanks 2s forwards;
+}
+
+input.ant-input:-internal-autofill-selected,
+input:-internal-autofill-selected {
+    background-color: transparent !important;
+}
+
+.authen-block .ant-input-affix-wrapper,
+.authen-block .ant-btn {
+    border-radius: 6px;
+}
+
+.authen-block .ant-form-item {
+    margin-bottom: 15px;
+}
+
+.authen-block .ant-form-vertical .ant-form-item-label {
+    padding-bottom: 3px;
+}
+
+.authen-block .ant-btn-primary {
+    background-color: var(--priColor);
+    border-color: var(--priColor);
+}
+
+.authen-block p {
+    color: rgb(177, 171, 203);
+    margin-bottom: 15px;
+}
+
+.authen-block label,
+.color-label {
+    color: var(--labelColor) !important;
+}
+
+.color-label {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.authen-block .change-btn {
+    padding: 2px 5px;
+}
+
+.note-authen {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    font-size: 11px;
+    color: rgb(219, 217, 227);
+    margin-bottom: 0 !important;
+}
+
+.bold-title {
+    font-family: OutfitBold;
+    font-size: 32px;
+    font-weight: bolder;
+    color: var(--labelColor);
+    line-height: 1.2;
+}
+
+.ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    display: none !important;
+}
+
+.authen-block .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    --dropdownC:#eff5fe;
+    color: rgb(150, 179, 226);
+    background-color: var(--dropdownC);
+    border-radius: 6px;
+    border-color: var(--dropdownC);
 }
 
 @keyframes exitLeft {
@@ -37,4 +125,9 @@
 @keyframes exitRight {
     0%   { transform: translateX(0);}
     100% { transform: translateX(112%);}
+}
+
+@keyframes showThanks {
+    0%   { transform: scale(0.5);}
+    100% { transform: scale(1);}
 }

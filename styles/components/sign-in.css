@@ -12,6 +12,10 @@
     width: 112%;
     height: 100%;
     background: rgb(240, 245, 255);
+    background-image:  url('/images/switch.jpg');
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: top !important;
     border-radius: 30px;
     z-index: 2;
 }
@@ -25,9 +29,19 @@
 }
 
 .signin-block__content {
+    position: relative;
     width: 88%;
+    height: 100%;
+    padding: 0 50px;
     margin-left: 22%;
     z-index: 1;
+}
+.signin-block__content .note-authen {
+    bottom: 0;
+}
+
+.signin-block__head {
+    margin-top: 50px;
 }
 
 @keyframes toleft {

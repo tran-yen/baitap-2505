@@ -22,17 +22,11 @@
 
 .main {
   display: flex;
-  position: fixed;
-  flex: 1;
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  top: 5vh;
-  left: 5%;
   width: 90%;
-  height: 90vh;
+  height: 600px;
   background-color: white;
-  border: 1px solid white;
+  border: none;
   border-radius: 30px;
   padding: 0;
+  margin: 0 5%;
 }

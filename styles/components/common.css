@@ -1,0 +1,40 @@
+.block-wrapper {
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+.authen-block {
+    padding: 20px 50px;
+}
+
+@media only screen and (min-width: 1600px) {
+    .block-wrapper {
+      margin: 0 0 24px 0;
+    }
+}
+  
+.ant-row {
+    width: 100%;
+    /* background-color: rgb(50, 90, 255); */
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.ant-row.complete .ant-col:first-child {
+    animation: exitLeft 1s forwards;
+}
+
+.ant-row.complete .ant-col:last-child {
+    animation: exitRight 1s forwards;
+}
+
+@keyframes exitLeft {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+@keyframes exitRight {
+    0%   { transform: translateX(0);}
+    100% { transform: translateX(112%);}
+}

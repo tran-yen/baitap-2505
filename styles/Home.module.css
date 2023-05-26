@@ -1,0 +1,38 @@
+.container {
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+
+.main {
+  display: flex;
+  position: fixed;
+  flex: 1;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  top: 5vh;
+  left: 5%;
+  width: 90%;
+  height: 90vh;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 0;
+}

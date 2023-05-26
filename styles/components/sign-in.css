@@ -1,0 +1,41 @@
+.signin-block {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.signin-block__switch {
+    position: absolute;
+    left: -12%;
+    top: 0;
+    width: 112%;
+    height: 100%;
+    background: rgb(240, 245, 255);
+    border-radius: 30px;
+    z-index: 2;
+}
+
+.signin-block__switch.switch{
+    animation: toleft .5s forwards;
+}
+
+.signin-block__switch.back{
+    animation: backright .5s forwards;
+}
+
+.signin-block__content {
+    width: 88%;
+    margin-left: 22%;
+    z-index: 1;
+}
+
+@keyframes toleft {
+    0%   { left: -12%; }
+    100% { left:-100%; }
+}
+
+@keyframes backright {
+    0%   { left: -100%; }
+    100% { left:-12%; }
+}
